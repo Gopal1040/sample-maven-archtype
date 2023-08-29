@@ -1,5 +1,4 @@
 pipeline {
-#agent any # master,slave 
 agent {
   label {
     label 'jenkins_slave'
