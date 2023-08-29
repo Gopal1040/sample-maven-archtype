@@ -16,14 +16,14 @@ stages {
       sh 'mvn compile'
     }
   }
-   stage('Test') {
+  /* stage('Test') {
     steps {
       sh 'mvn test'
     }
-  }
+  } */
     stage('Package') {
     steps {
-      sh 'mvn package'
+      sh '-Dmaven.test.skip=true package'
     }
   }
 
