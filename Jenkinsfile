@@ -23,7 +23,7 @@ stages {
   } */
     stage('Package') {
     steps {
-      sh '-Dmaven.test.skip=true package'
+      sh 'mvn package -Dmaven.test.skip=true'
     }
   }
 
